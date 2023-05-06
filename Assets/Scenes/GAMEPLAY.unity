@@ -401,9 +401,9 @@ MonoBehaviour:
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 604523576}
-        m_TargetAssemblyTypeName: GAMEPLAY, Assembly-CSharp
-        m_MethodName: Elephant
+      - m_Target: {fileID: 855864435}
+        m_TargetAssemblyTypeName: RotateObj, Assembly-CSharp
+        m_MethodName: DefRot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -419,6 +419,18 @@ MonoBehaviour:
       - m_Target: {fileID: 604523576}
         m_TargetAssemblyTypeName: GAMEPLAY, Assembly-CSharp
         m_MethodName: TrackedOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 855864435}
+        m_TargetAssemblyTypeName: RotateObj, Assembly-CSharp
+        m_MethodName: DefRot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -491,6 +503,12 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 550890161}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &579305822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5950738820739629911, guid: ddefb219fa858ea4885c09a15166c717,
+    type: 3}
+  m_PrefabInstance: {fileID: 696522579}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &604523575
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,6 +648,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 696522579}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &696522582
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579305822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &696522583
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579305822}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &696522584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579305822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ba44f13acb7ac40b73004bdd87890c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +784,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &710157984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 087a2ac1c75bbc34aa1d66d7766c1d5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 910036031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &771165661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -969,6 +1035,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 855864430}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &855864432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8139140125167571169, guid: 197d1616cf1b24f4d9e6b18d6bf6a30e,
+    type: 3}
+  m_PrefabInstance: {fileID: 855864430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &855864434
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855864432}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &855864435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855864432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ba44f13acb7ac40b73004bdd87890c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 5
+--- !u!135 &855864437
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855864432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.08
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!224 &907870524 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 37120061529362227, guid: 984bcc0910d3f1b41aee09372cf4d366,
@@ -1070,6 +1184,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 910036031}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &910036034
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710157984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &910036035
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710157984}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &910036036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710157984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ba44f13acb7ac40b73004bdd87890c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 5
 --- !u!1 &911859830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1313,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 910036036}
+        m_TargetAssemblyTypeName: RotateObj, Assembly-CSharp
+        m_MethodName: DefRot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &911859833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,6 +1388,12 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 911859833}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &1036635132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 187857363966201157, guid: 9b50cd4047f0e5247846be1b978694ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 1588822065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1064414407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,6 +1472,18 @@ MonoBehaviour:
       - m_Target: {fileID: 604523576}
         m_TargetAssemblyTypeName: GAMEPLAY, Assembly-CSharp
         m_MethodName: TrackedOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 696522584}
+        m_TargetAssemblyTypeName: RotateObj, Assembly-CSharp
+        m_MethodName: DefRot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1569,6 +1755,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1588822070}
+        m_TargetAssemblyTypeName: RotateObj, Assembly-CSharp
+        m_MethodName: DefRot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1564044564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1727,6 +1925,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1588822065}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1588822068
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036635132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.4, z: 0}
+--- !u!54 &1588822069
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036635132}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1588822070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036635132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ba44f13acb7ac40b73004bdd87890c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 5
 --- !u!1001 &1680058004
 PrefabInstance:
   m_ObjectHideFlags: 0
