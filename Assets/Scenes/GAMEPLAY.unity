@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ba44f13acb7ac40b73004bdd87890c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeed: 5
+  rotSpeed: 2
 --- !u!135 &385800999
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ba44f13acb7ac40b73004bdd87890c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeed: 5
+  rotSpeed: 2
 --- !u!135 &493189998
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ba44f13acb7ac40b73004bdd87890c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeed: 5
+  rotSpeed: 2
 --- !u!135 &1300994629
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1436,7 +1436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ba44f13acb7ac40b73004bdd87890c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeed: 5
+  rotSpeed: 2
 --- !u!135 &1542630741
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8301887, g: 0.6774653, b: 0.6774653, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2469,7 +2469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a802b2b6ba6a72f44aa6307f23d8af3c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13875ec561733144da1fa0ae9c796887, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

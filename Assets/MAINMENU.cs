@@ -11,6 +11,11 @@ public class MAINMENU : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 
+    public void QuitAPP()
+    {
+        Application.Quit();
+    }
+
     public void DownloadKartu(string link)
     {
         Application.OpenURL(link);
