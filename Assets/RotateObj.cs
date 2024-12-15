@@ -11,7 +11,7 @@ public class RotateObj : MonoBehaviour
 
     Quaternion rotation;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
         rotation = transform.rotation;
